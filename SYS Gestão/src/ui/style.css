@@ -1,0 +1,235 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+window {
+    background-color: #f4f6f8;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: linear-gradient(180deg, #1565C0 0%, #0D47A1 100%);
+    min-width: 250px;
+    padding: 0;
+    color: white;
+}
+
+.sidebar-header {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header label {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar button.sidebar-button {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: white;
+    padding: 12px 24px;
+    margin: 4px 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar button.sidebar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar button.sidebar-button.sidebar-active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar button.sidebar-button label {
+    color: white;
+    font-size: 14px;
+}
+
+.sidebar button.sidebar-button image {
+    color: white;
+    margin-right: 12px;
+}
+
+/* Content Area */
+stack {
+    background-color: #f4f6f8;
+    padding: 24px;
+}
+
+box.view-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 24px;
+}
+
+/* Action Buttons */
+.button-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 12px;
+}
+
+.action-button {
+    border-radius: 25px;
+    padding: 8px 24px;
+    border: none;
+    color: white;
+    min-height: 36px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.new-product-button {
+    background-color: #4CAF50;
+}
+
+.new-product-button:hover {
+    background-color: #45a049;
+}
+
+.edit-button {
+    background-color: #2196F3;
+}
+
+.edit-button:hover {
+    background-color: #1e88e5;
+}
+
+.delete-button {
+    background-color: #F44336;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Table Styles */
+scrolledwindow {
+    border: none;
+    background: white;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.modern-tree-view {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.modern-tree-view header {
+    background-color: #f8f9fa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modern-tree-view header button {
+    padding: 12px 16px;
+    font-weight: 500;
+    color: #1565C0;
+    border: none;
+    background: transparent;
+}
+
+.modern-tree-view row {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.modern-tree-view row:hover {
+    background-color: #f5f5f5;
+}
+
+.modern-tree-view row:selected {
+    background-color: #e3f2fd;
+    color: #1565C0;
+}
+
+/* Price Filter */
+.price-filter {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.price-filter > label {
+    color: #1565C0;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+scale {
+    margin: 8px 0;
+}
+
+scale trough {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    min-height: 4px;
+}
+
+scale slider {
+    background-color: #2196F3;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+scale slider:hover {
+    background-color: #1e88e5;
+}
+
+.price-value {
+    background-color: #f4f6f8;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #1565C0;
+    font-weight: 500;
+}
+
+/* Dialog Styles */
+dialog {
+    border-radius: 8px;
+    border: none;
+}
+
+dialog .dialog-vbox {
+    margin: 16px;
+}
+
+entry {
+    min-height: 36px;
+    border-radius: 4px;
+    padding: 0 8px;
+    border: 1px solid #e0e0e0;
+}
+
+entry:focus {
+    border-color: #2196F3;
+}
+
+/* Message Dialog Styles */
+messagedialog {
+    border-radius: 8px;
+}
+
+messagedialog .message-area {
+    padding: 16px;
+}

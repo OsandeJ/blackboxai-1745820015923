@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h1>Sistema de Gestão</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-page="produtos">
+                    <i class="material-icons">inventory_2</i>
+                    <span>Produtos</span>
+                </li>
+                <li data-page="clientes">
+                    <i class="material-icons">people</i>
+                    <span>Clientes</span>
+                </li>
+                <li data-page="pedidos">
+                    <i class="material-icons">shopping_cart</i>
+                    <span>Pedidos</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Produtos Page -->
+            <div class="page active" id="produtos">
+                <header class="page-header">
+                    <h2>Produtos</h2>
+                    <div class="actions">
+                        <button class="btn btn-primary">
+                            <i class="material-icons">add</i>
+                            Novo Produto
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="material-icons">edit</i>
+                            Editar
+                        </button>
+                        <button class="btn btn-danger">
+                            <i class="material-icons">delete</i>
+                            Excluir
+                        </button>
+                    </div>
+                </header>
+                <div class="content">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Descrição</th>
+                                <th>Preço</th>
+                                <th>IVA</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample data -->
+                            <tr>
+                                <td>1</td>
+                                <td>Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>1000 Kz</td>
+                                <td>140 Kz</td>
+                                <td>1140 Kz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Clientes Page -->
+            <div class="page" id="clientes">
+                <header class="page-header">
+                    <h2>Clientes</h2>
+                    <div class="actions">
+                        <button class="btn btn-primary">
+                            <i class="material-icons">person_add</i>
+                            Novo Cliente
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="material-icons">edit</i>
+                            Editar
+                        </button>
+                        <button class="btn btn-danger">
+                            <i class="material-icons">delete</i>
+                            Excluir
+                        </button>
+                    </div>
+                </header>
+                <div class="content">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>NIF</th>
+                                <th>Endereço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample data -->
+                            <tr>
+                                <td>1</td>
+                                <td>João Silva</td>
+                                <td>+244 923 456 789</td>
+                                <td>123456789</td>
+                                <td>Rua Principal, 123</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pedidos Page -->
+            <div class="page" id="pedidos">
+                <header class="page-header">
+                    <h2>Pedidos</h2>
+                    <div class="actions">
+                        <button class="btn btn-primary">
+                            <i class="material-icons">add_shopping_cart</i>
+                            Novo Pedido
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="material-icons">visibility</i>
+                            Visualizar
+                        </button>
+                        <button class="btn btn-info">
+                            <i class="material-icons">print</i>
+                            Imprimir Fatura
+                        </button>
+                    </div>
+                </header>
+                <div class="content">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Data</th>
+                                <th>Cliente</th>
+                                <th>Subtotal</th>
+                                <th>IVA</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample data -->
+                            <tr>
+                                <td>1</td>
+                                <td>2024-01-20</td>
+                                <td>João Silva</td>
+                                <td>5000 Kz</td>
+                                <td>700 Kz</td>
+                                <td>5700 Kz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
